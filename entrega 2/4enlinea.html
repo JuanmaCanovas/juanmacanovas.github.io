@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c59d1be4df.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="css\style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images\logogamecube.PNG" alt=""></a>
+        <div class="searchbarcontainer-lg">
+            <input type="text" class="searchbar-lg m-bot">
+            <i class="fa-solid fa-magnifying-glass search-icon-lg"></i>
+        </div>
+        <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>            
+            <div class="menu-sm">
+                <div class="searchbarcontainer">
+                    <input type="text" class="searchbar m-bot">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <a href="index.html" class="m-text m-bot">Home</a>
+                <a href="#" class="m-text m-bot">Profile</a>
+                <a href="#" class="m-text m-bot">Favorites</a>
+                <a href="#" class="m-text m-bot">Friends</a>
+                <a href="#" class="m-text m-bot">Logout</a>
+                <a href="#" class="m-bot m-line"></a>
+            </div>
+        </nav>
+    </header>
+    <div class="breadcrumbs"><p><a href="index.html">Home</a> > <a href="#">Board games</a> > <a href="#">Connect 4</a></p></div>
+    <div class="container-4enlinea">
+        <h1>Connect 4</h1>
+        <div class="game-container">
+            <img class="gamelogo" src="images/conecta4.png" alt="">
+            <button>
+                <img class="btnplay" src="images/playbutton.png" alt="">
+            </button>
+        </div>
+        <div class="info-container">
+            <div class="details-btn focused" id="details-btn">
+                <p>Details</p>
+            </div>
+            <div class="instructions-btn" id="instructions-btn">
+                <p>Instructions</p>
+            </div>
+            <div class="comments-btn" id="comments-btn">
+                <p>Comments</p>
+            </div>
+            <div class="details-content">
+                <p>It’s the classic game you love to play with your friends and family. Can you connect four of your coloured disks by dropping them into the holder before your opponent does?</p>
+                <div class="container-images">
+                    <img src="images/c41.jpg" alt="">
+                    <img src="images/c42.jpg" alt="">
+                    <img src="images/c43.jpg" alt="">
+                    <img src="images/c44.jpg" alt="">
+                </div>
+                <div class="container-video">
+                    <iframe width="367" height="215" src="https://www.youtube.com/embed/pF7SO4GfgEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="instructions-content d-none">
+                <h2>HOW TO PLAY</h2>
+                <div class="instructions-text">
+                    <p>•Players must connect 4 of the same colored discs in a row to win.</p>
+                    <p>•Only one piece is played at a time.</p>
+                    <p>•Players can be on the offensive or defensive.</p>
+                    <p>•The game ends when there is a 4-in-a-row or a stalemate.</p>
+                    <p>•The starter of the previous game goes second on the next game.</p>
+                </div>
+            </div>
+            <div class="comments-content d-none">
+                <div class="comment-form">
+                    <div class="top-line">
+                        <div class="profile-img">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect y="0.989197" width="32" height="31.9616" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_218_466" transform="translate(0 -0.000601149) scale(0.03125 0.0312876)"/>
+                            </pattern>
+                            <image id="image0_218_466" width="32" height="32" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                            </svg>
+                        </div>
+                        <p class="you">YOU</p>
+                        <p class="char-count">0/250</p>
+                    </div>
+                    <input type="text" class="comment-input" placeholder="Write your comment here...">
+                    <div class="bottom-line">
+                        <p>Rate game:</p>
+                        <i class="fa fa-star" aria-hidden="true" id="yellow"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <button>POST <i class="fa-regular fa-paper-plane" id="grey"></i></button>
+                    </div>
+                </div>
+
+                <div class="lastcomments-container">
+                    <h3>LAST COMMENTS <i class="fa-solid fa-comments" id="l-grey"></i></h3>
+                    <div class="comment">
+                        <div class="top-line">  
+                            <div class="profile-img">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect y="0.989197" width="32" height="31.9616" fill="url(#pattern0)"/>
+                                    <defs>
+                                      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_218_466" transform="translate(0 -0.000601149) scale(0.03125 0.0312876)"/>
+                                     </pattern>
+                                      <image id="image0_218_466" width="32" height="32" xlink:href="data:image/png;base64,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"/>
+                                     </defs>
+                                  </svg>
+                            </div>
+                            <p class="you">YOU</p>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true" id="yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <p>Very nice game!! So funny.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="box-footer">
+                <div class="logofooter">
+                    <img src="images/logogamecube.PNG" alt="">
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="gamecube">
+                    <h2>Gamecube</h2>
+                    <a href="#">News</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="follow">
+                    <h2>Follow Gamecube</h2>
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                    <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i> Youtube</a>
+                    <a href="#"><i class="fa fa-steam-square" aria-hidden="true"></i> Steam</a>
+                    <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i> Twitch</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="categories">
+                    <h2>Categories</h2>
+                    <a href="#">Action</a>
+                    <a href="#">Board games</a>
+                    <a href="#">Rpg</a>
+                    <a href="#">Adventure</a>
+                    <a href="#">Terror</a>
+                    <a href="#">Fantasy</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="utilities">
+                    <h2>Utilities</h2>
+                    <a href="index.html">Home</a>
+                    <a href="#">Profile</a>
+                    <a href="#">Favorites</a>
+                    <a href="#">Support</a>
+                    <a href="#">Forum</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="utilities">
+                    <h2>Store</h2>
+                    <a href="#">GC Premium</a>
+                    <a href="#">Offers</a>
+                    <a href="#">Payment methods</a>
+                </div>
+            </div>
+        </div>
+        <div class="box-copyright">
+            <hr>
+            <p>Todos los derechos reservados © <b>Gamecube</b></p>
+        </div>
+    </footer>
+    <script src="js\menu.js"></script>
+    <script src="js\main.js"></script>
+</body>
+</html>

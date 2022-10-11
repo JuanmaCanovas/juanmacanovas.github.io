@@ -102,6 +102,10 @@ a{
 }
 
 header{
+    width: 100%;
+    top:0;
+    z-index: 15;
+    position: fixed;
     height: 62px;
     background-color: rgb(71, 71, 101);
     display: flex;
@@ -549,7 +553,7 @@ footer{
 }
 
 .carousel-favorites{
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .carousel-favorites h1{
@@ -560,7 +564,12 @@ footer{
 }
 
 @media (min-width:1200px){
-
+    header{
+        width: 100%;
+        top:0;
+        z-index: 15;
+        position: fixed;
+    }
     .container-loader{
         z-index: 6;
         position: absolute;
@@ -694,7 +703,7 @@ footer{
     }
     
     .carousel-favorites{
-        margin-top: 3%;
+        margin-top: 5%;
     }
 
     .container-favorites{

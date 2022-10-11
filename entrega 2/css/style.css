@@ -571,7 +571,7 @@ footer{
         position: fixed;
     }
     .container-loader{
-        z-index: 6;
+        z-index: 10;
         position: absolute;
         background: rgb(30, 29, 35);
         color: #fff;

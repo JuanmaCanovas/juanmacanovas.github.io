@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c59d1be4df.js" crossorigin="anonymous"></script>   
+    <script defer src="js/carousel-action.js"></script>
+    <script  defer src="js/carousel-bgames.js"></script>
+    <link rel="stylesheet" href="css\style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="d-none" id="header">
+        <a href="index.html"><img class="logo" src="images\logogamecube.PNG" alt=""></a>
+        <div class="searchbarcontainer-lg">
+            <input type="text" class="searchbar-lg m-bot">
+            <i class="fa-solid fa-magnifying-glass search-icon-lg"></i>
+        </div>
+        <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>            
+            <div class="menu-sm">
+                <div class="searchbarcontainer">
+                    <input type="text" class="searchbar m-bot">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <a href="index.html" class="m-text m-bot">Home</a>
+                <a href="#" class="m-text m-bot">Profile</a>
+                <a href="#" class="m-text m-bot">Favorites</a>
+                <a href="#" class="m-text m-bot">Friends</a>
+                <a href="#" class="m-text m-bot">Logout</a>
+                <a href="#" class="m-bot m-line"></a>
+            </div>
+        </nav>
+    </header>
+    <div class="container-loader" id="container-loader">
+        <div class="preloader">
+            <p>Loading</p>
+            <p class="percentage" id="percentage">0%</p>
+        </div>
+    </div>
+    <section class="carousel-favorites">
+        <h1>FAVORITES</h1>
+        <div class="container-favorites">
+            <div class="slider" id="slider">
+                <div class="slider-section">
+                    <img src="images/FAV1.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slider-section">
+                    <img src="images/FAV2.jpg" alt="" class="slider-img"></div>
+                <div class="slider-section">
+                    <h1 class="coming">COMING SOON</h1>
+                    <a href="sonic.html"><img src="images/FAV3.jpg" alt="" class="slider-img "></a>
+                </div>
+                <div class="slider-section">
+                    <img src="images/FAV4.jpg" alt="" class="slider-img">
+                </div>
+                <div class="slider-section">
+                    <img src="images/FAV5.jpg" alt="" class="slider-img">
+                </div>
+            </div>
+            <i class="fa fa-chevron-left slider-btn slider-btn-left" aria-hidden="true" id="btn-left"></i>
+            <i class="fa fa-chevron-right slider-btn slider-btn-right" aria-hidden="true" id="btn-right"></i>
+        </div>
+    </section>
+    <section class="carousel-action">
+        <h2>Action</h2>
+        <div class="slick-list" id="slick-list-action">
+            <button class="slick-arrow slick-prev" id="button-prev-action">
+                <i class="fa-sharp fa-solid fa-angle-left"></i>
+            </button>
+            <div class="slick-track" id="track-action">
+                <div class="slick-action">
+                    <div>
+                            <div class="gamecard-free">
+                                <h3>Cops N Crims</h3>
+                                <img class="img-gamecard" src="images\A1.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">FREE</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-action">
+                    <div>
+                            <div class="gamecard">
+                                <h3>War brokers</h3>
+                                <img class="img-gamecard" src="images\A2.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">$5,99</p>
+                                </div>
+                                <div class="cart">
+                                    <i class="fa-solid fa-cart-shopping carticon"></i>
+                                </div>
+                                <div class="on-cart d-none">
+                                    <i class="fa-solid fa-x x-icon"></i>
+                                    <p class="cart-text">En el carrito</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-action">
+                    <div>
+                            <div class="gamecard-free">
+                                <h3>Zombs Royale</h3>
+                                <img class="img-gamecard" src="images\A3.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">FREE</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-action">
+                    <div>
+                            <div class="gamecard">
+                                <h3>Foward Assault Remix</h3>
+                                <img class="img-gamecard" src="images\A4.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">$7,99</p>
+                                </div>
+                                <div class="cart">
+                                    <i class="fa-solid fa-cart-shopping carticon"></i>
+                                </div>
+                                <div class="on-cart d-none">
+                                    <i class="fa-solid fa-x x-icon"></i>
+                                    <p class="cart-text">En el carrito</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-action">
+                    <div>
+                            <div class="gamecard">
+                                <h3>H1Z1 Battle Royale</h3>
+                                <img class="img-gamecard" src="images\A5.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">$9,99</p>
+                                </div>
+                                <div class="cart">
+                                    <i class="fa-solid fa-cart-shopping carticon"></i>
+                                </div>
+                                <div class="on-cart d-none">
+                                    <i class="fa-solid fa-x x-icon"></i>
+                                    <p class="cart-text">En el carrito</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-action">
+                    <div>
+                            <div class="gamecard-free">
+                                <h3>Quake Free</h3>
+                                <img class="img-gamecard" src="images\A6.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">FREE</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+            
+            
+            </div>
+            <button class="slick-arrow slick-next" id="button-next-action">
+                <i class="fa-sharp fa-solid fa-angle-right"></i>
+            </button>
+        </div>
+    </section>
+    <section class="carousel-bgames">
+        <h2>Board games</h2>
+        <div class="slick-list" id="slick-list-bgames">
+            <button class="slick-arrow slick-prev" id="button-prev-bgames">
+                <i class="fa-sharp fa-solid fa-angle-left"></i>
+            </button>
+            <div class="slick-track" id="track-bgames">
+                <div class="slick-bgames">
+                    <div>
+                            <div class="gamecard-free">
+                                <h3>Connect 4 Mario bros</h3>
+                                <a href="4enlinea.html"><img class="img-gamecard" src="images\BG1.jpg" alt=""></a>
+                                <div class="price">
+                                    <p class="price-text">FREE</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-bgames">
+                    <div>
+                            <div class="gamecard">
+                                <h3>Damas Casual Arena</h3>
+                                <img class="img-gamecard" src="images\BG2.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">$5,99</p>
+                                </div>
+                                <div class="cart">
+                                    <i class="fa-solid fa-cart-shopping carticon"></i>
+                                </div>
+                                <div class="on-cart d-none">
+                                    <i class="fa-solid fa-x x-icon"></i>
+                                    <p class="cart-text">En el carrito</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-bgames">
+                    <div>
+                            <div class="gamecard-free">
+                                <h3>Scrabble</h3>
+                                <img class="img-gamecard" src="images\BG3.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">FREE</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-bgames">
+                    <div>
+                            <div class="gamecard-free">
+                                <h3>Monopoly Plus</h3>
+                                <img class="img-gamecard" src="images\BG4.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">FREE</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-bgames">
+                    <div>
+                            <div class="gamecard-free">
+                                <h3>Parcheesi</h3>
+                                <img class="img-gamecard" src="images\BG5.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">FREE</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="slick-bgames">
+                    <div>
+                            <div class="gamecard-free">
+                                <h3>Uno</h3>
+                                <img class="img-gamecard" src="images\BG6.jpg" alt="">
+                                <div class="price">
+                                    <p class="price-text">FREE</p>
+                                </div>
+                                <i class="fa-solid fa-star favstar"></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slick-arrow slick-next" id="button-next-bgames">
+                <i class="fa-sharp fa-solid fa-angle-right"></i>
+            </button>
+    </section>
+    <footer>
+        <div class="container-footer">
+            <div class="box-footer">
+                <div class="logofooter">
+                    <img src="images/logogamecube.PNG" alt="">
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="gamecube">
+                    <h2>Gamecube</h2>
+                    <a href="#">News</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <details>
+                    <summary>
+                        <h2 class="gamecube-sm">Gamecube</h2>
+                    </summary>
+                    <div class="detailtext">
+                        <a href="#">News</a>
+                        <a href="#">About us</a>
+                        <a href="#">Contact us</a>
+                    </div>
+                </details>
+            </div>
+            <div class="box-footer">
+                <div class="follow">
+                    <h2>Follow Gamecube</h2>
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                    <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i> Youtube</a>
+                    <a href="#"><i class="fa fa-steam-square" aria-hidden="true"></i> Steam</a>
+                    <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i> Twitch</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <details>
+                    <summary>
+                        <h2 class="follow-sm">Follow Gamecube</h2>
+                    </summary>
+                    <div class="detailtext">
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+                        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                        <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i> Youtube</a>
+                        <a href="#"><i class="fa fa-steam-square" aria-hidden="true"></i> Steam</a>
+                        <a href="#"><i class="fa fa-twitch" aria-hidden="true"></i> Twitch</a>
+                    </div>
+                </details>
+            </div>
+            <div class="box-footer">
+                <div class="categories">
+                    <h2>Categories</h2>
+                    <a href="#">Action</a>
+                    <a href="#">Board games</a>
+                    <a href="#">Rpg</a>
+                    <a href="#">Adventure</a>
+                    <a href="#">Terror</a>
+                    <a href="#">Fantasy</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="utilities">
+                    <h2>Utilities</h2>
+                    <a href="index.html">Home</a>
+                    <a href="#">Profile</a>
+                    <a href="#">Favorites</a>
+                    <a href="#">Support</a>
+                    <a href="#">Forum</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <details>
+                    <summary>
+                        <h2 class="utilities-sm">
+                            Utilities
+                        </h2>
+                    </summary>
+                    <div class="detailtext">
+                        <a href="index.html">Home</a>
+                        <a href="#">Profile</a>
+                        <a href="#">Favorites</a>
+                        <a href="#">Support</a>
+                        <a href="#">Forum</a>
+                    </div>
+                </details>
+            </div>
+            <div class="box-footer">
+                <div class="store">
+                    <h2>Store</h2>
+                    <a href="#">GC Premium</a>
+                    <a href="#">Offers</a>
+                    <a href="#">Payment methods</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <details>
+                    <summary>
+                        <h2 class="store-sm">Store</h2>
+                    </summary>
+                    <div class="detailtext">
+                        <a href="#">GC Premium</a>
+                        <a href="#">Offers</a>
+                        <a href="#">Payment methods</a>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="box-copyright">
+            <hr>
+            <p>Todos los derechos reservados © <b>Gamecube</b></p>
+        </div>
+    </footer>
+    <script src="js/carousel-actionfix.js"></script>
+    <script src="js\menu.js"></script>
+    <script src="js\carousel-favs.js"></script>
+    <script src="js\main.js"></script>
+    <script src="js\loader.js"></script>
+</body>
+</html>
